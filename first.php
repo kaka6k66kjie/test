@@ -1,3 +1,3 @@
 <?php
-echo 'Aka,您好！';
+echo 'Hi, Aka';
 ?>
