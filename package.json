@@ -1,21 +1,30 @@
 {
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
+    "name": "thsHotRank",
+    "version": "0.1.0",
+    "author": "shantenghui",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "build-test": "vue-cli-service build --mode prerelease",
+        "prerelease": "vue-cli-service build  --mode prerelease"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "core-js": "^3.6.4",
+        "smoothscroll-polyfill": "^0.4.4",
+        "vue": "^2.6.11",
+        "vue-router": "^2.6.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.3.0",
+        "@vue/cli-plugin-router": "^4.3.0",
+        "@vue/cli-service": "^4.3.0",
+        "less": "^3.0.4",
+        "less-loader": "^5.0.0",
+        "terser-webpack-plugin": "^4.2.3",
+        "vue-template-compiler": "^2.6.11",
+        "webpack": "^4.33.0",
+        "regenerator-runtime": "^0.13.7"
     }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "devDependencies": {
-    "@commitlint/config-conventional": "^11.0.0",
-    "commitizen": "^4.2.3",
-    "conventional-changelog-cli": "^2.1.1",
-    "husky": "^4.3.8"
-  },
-  "scripts": {
-  "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
-}
 }
